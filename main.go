@@ -166,5 +166,6 @@ func main() {
     }
     wg.Wait()
 
-    fmt.Println("Total verified IDs count:", verifiedIDCount)
+    elapsed := time.Since(start)
+    fmt.Println("Total verified IDs count:", verifiedIDCount, ", time cost:", elapsed)
 }
